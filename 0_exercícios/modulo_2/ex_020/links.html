@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+
+        /* SELETORES PERSONALIZADOS
+        # = ID
+        . = Class
+        : = Pseudo-class
+        :: = Pseudo elemento
+        > = Children (filha)
+        */
+        
+        @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+        body {
+            font:Arial, sans-serif;
+        }
+
+        a {
+            color: chartreuse;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited {
+            color: crimson;
+        }
+
+        a:hover {
+            color: blue;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: darkmagenta;
+        }
+
+        a::after{
+            content:' [link]';
+            font-weight: normal;
+        }
+
+        .especial{
+            color: chartreuse;
+            font: normal normal 1em "Kaushan Script"
+        }
+        .especial:hover{
+            color: chocolate;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando</h1>
+    <ul>
+        <li class="especial"><a href="https://github.com/Matheus-Nascimento-Angelo" target="_blank" rel="external">Repositório GitHub</a></li>
+        <li class="especial"><a href="https://www.youtube.com/watch?v=qF935jm4HfQ" target="_blank" rel="external">Canal do Youtube</a></li>
+        <li><a href="https://www.cursoemvideo.com/curso/html5-css3-modulo1/" target="_blank" rel="external">Site do Curso em Video</a></li>
+    </ul>
+</body>
+</html>
